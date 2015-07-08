@@ -1,0 +1,36 @@
+{
+  "name": "gh-repos-creation-cal",
+  "version": "0.0.0",
+  "description": "My beautiful module",
+  "license": "MIT",
+  "repository": "icyflame/gh-repos-creation-cal",
+  "author": {
+    "name": "Siddharth Kannan",
+    "email": "kannan.siddharth12@gmail.com",
+    "url": "icyflame.github.io"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "semistandard && mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    ""
+  ],
+  "dependencies": {
+    "meow": "^3.3.0",
+    "sync-request": "^2.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "semistandard": "6.1.1"
+  }
+}
