@@ -1,6 +1,6 @@
 {
   "name": "gh-repos-creation-cal",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create a calendar of your repository creations in GitHub",
   "license": "MIT",
   "repository": "icyflame/gh-repos-creation-cal",
