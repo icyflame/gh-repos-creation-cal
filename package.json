@@ -1,7 +1,7 @@
 {
   "name": "gh-repos-creation-cal",
   "version": "0.0.0",
-  "description": "My beautiful module",
+  "description": "Create a calendar of your repository creations in GitHub",
   "license": "MIT",
   "repository": "icyflame/gh-repos-creation-cal",
   "author": {
@@ -23,10 +23,18 @@
   "keywords": [
     "cli-app",
     "cli",
-    ""
+    "github",
+    "repository",
+    "creation",
+    "calendar",
+    "cal",
+    "got",
+    "created_at"
   ],
   "dependencies": {
+    "bar-horizontal": "^0.2.1",
     "github-repositories": "^1.1.2",
+    "is-empty": "0.0.1",
     "meow": "^3.3.0",
     "sync-request": "^2.0.1"
   },

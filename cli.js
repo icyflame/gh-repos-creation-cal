@@ -6,18 +6,22 @@ var ghReposCreationCal = require('./');
 var cli = meow({
   help: [
     'Usage',
-    '  $ gh-repos-creation-cal [input]',
+    '  $ gh-repos-creation-cal username',
     '',
     'Examples',
-    '  $ gh-repos-creation-cal',
-    '  unicorns & rainbows',
-    '',
-    '  $ gh-repos-creation-cal ponies',
-    '  ponies & rainbows',
+    '  $ gh-repos-creation-cal icyflame --monthly',
+    '  //=> Outputs the screenshot',
     '',
     'Options',
-    '  --foo  Lorem ipsum. Default: false'
+    '  --monthly Show the monthly repo-creation numbers.',
+    '            Default: true',
+    ''
   ]
 });
 
-ghReposCreationCal(cli.input[0]);
+if (cli.input.length < 1) {
+  console.log('You must enter the GitHub `username`');
+  process.exit(1);
+}
+
+ghReposCreationCal(cli.input[0], cli.flags);

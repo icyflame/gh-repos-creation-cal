@@ -1,25 +1,17 @@
 # gh-repos-creation-cal
 
-> My beautiful module
+> Create a calendar of your repository creations in GitHub
 
 [![Build Status](https://travis-ci.org/icyflame/gh-repos-creation-cal.svg?branch=master)](https://travis-ci.org/icyflame/gh-repos-creation-cal)
 
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/Flet/semistandard)
 
+![screenshot](screenshot.png)
+
 ## Install
 
 ```
 $ npm install --save gh-repos-creation-cal
-```
-
-
-## Usage
-
-```js
-var ghReposCreationCal = require('gh-repos-creation-cal');
-
-ghReposCreationCal('unicorns');
-//=> unicorns & rainbows
 ```
 
 
@@ -32,39 +24,16 @@ $ npm install --global gh-repos-creation-cal
 $ gh-repos-creation-cal --help
 
   Usage
-    gh-repos-creation-cal [input]
+    $ gh-repos-creation-cal username
 
-  Example
-    gh-repos-creation-cal
-    unicorns & rainbows
-
-    gh-repos-creation-cal ponies
-    ponies & rainbows
+  Examples
+    $ gh-repos-creation-cal icyflame --monthly
+    //=> Outputs the screenshot
 
   Options
-    --foo  Lorem ipsum. Default: false
+    --monthly Show the monthly repo-creation numbers.
+              Default: true
 ```
-
-
-## API
-
-### ghReposCreationCal(input, [options])
-
-#### input
-
-*Required*  
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
 
 
 ## License
